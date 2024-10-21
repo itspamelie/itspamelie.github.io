@@ -1,0 +1,28 @@
+/* CELULAR*/
+@media (max-width: 500px){
+    header>div#barra{
+        display: flex;
+        justify-content: space-between;
+    }
+   header>div#barra>ul>li.text{
+display: none;
+   }  
+   header>div#barra>ul>li.text{
+    margin-left: 50px;
+    margin-right: 50px;
+   }
+   section#main{
+    width:1000px;
+    display: flex;
+    align-items: center;
+   }
+   section#main>div#mitad2>h3{
+ display: none;
+   }
+   section#main>div#mitad1{
+width: 100%;
+}
+#container-div>.dproduct{
+    flex: 1 1 calc(100% - 20px);
+}
+}
