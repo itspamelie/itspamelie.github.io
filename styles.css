@@ -9,8 +9,13 @@ body{
     height: 100%;
 }
 header{
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 110px;
+    height: 120px;
+    position:fixed;
+    background-color: whitesmoke;
+    z-index: 1000; /* Asegura que el header esté encima del resto del contenido */
 }
 header>div#anuncio{
     width: 100%;
@@ -37,12 +42,6 @@ header>div#barra>ul{
     justify-content: space-between;
     align-items: center;
 }
-header>div#barra>ul>li.text{
-    list-style: none;
-    margin-left: calc(5.3%);
-    margin-top: 28px;
-    width: auto;
-}
 header>div#barra>ul>li#foto{
     margin-left: 45px;
     list-style: none;
@@ -50,6 +49,12 @@ header>div#barra>ul>li#foto{
 
 header>div#barra>ul>li#foto>img{
     height: 50px;
+}
+header>div#barra>ul>li.text{
+    list-style: none;
+    margin-left: calc(5.25%);
+    margin-top: 28px;
+    width: auto;
 }
 header>div#barra>ul>li>a{
     text-decoration: none;
@@ -61,10 +66,9 @@ header>div#barra>ul>li>a{
 header>div#barra>ul>li>a:hover{
 transition: 1ms ease-in all;
 color: #CB6CE6;
-text-decoration: underline;
 }
 section#main{
-    margin-top: 23px;
+    margin-top: 143px;
     height: 400px;
     width: 100%;
     display: flex;
@@ -77,10 +81,15 @@ section#main>div#mitad1{
     height: 100%;
     align-items: center;
     justify-content: center;
+    overflow:hidden;
 }
 section#main>div#mitad1>img{
     width: 100%;
     height: 400px;
+    transition: 500ms ease-in all;
+}
+section#main>div#mitad1>img:hover{
+    transform: scale(1.1);
 }
 section#main>div#mitad2{
     width: 50%;
@@ -114,6 +123,7 @@ section#main>div#mitad2>div#buttons{
     height: 40px;
 }
 section#main>div#mitad2>div#buttons>button{
+    transition: 500ms ease-in all;
     width: 20%;
     height: 100%;
     background-color: whitesmoke;
@@ -122,9 +132,15 @@ section#main>div#mitad2>div#buttons>button{
     margin-left: 20px;
     margin-right: 20px;
 }
+section#main>div#mitad2>div#buttons>button:hover{
+    cursor:pointer;
+color:whitesmoke;
+background-color: #000000;
+border-radius: 0;
+}
 section#menu{
     width: 100%;
-    height: 1740px;
+    height: 1700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,6 +165,10 @@ section#menu>div.title>button.circle{
     border: none;
 background-color: gray;
 margin-top: 18px;
+transition: 400ms ease-in all;
+}
+section#menu>div.title>button.circle:hover{
+background-color: #333;
 }
 section#menu>div.title>button#vermas{
 width: 200px;
@@ -159,13 +179,17 @@ color: #CB6CE6;
 font-weight:bolder;
 border: 1px solid #CB6CE6;
 }
+section#menu>div.title>button#vermas:hover{
+    transition: 500ms ease-in all;
+    color: whitesmoke;
+    background-color: #CB6CE6;
+}
 section#menu>div#container-div{
     width: calc(100% - 95px);
     height: 395px;
     display: flex;
     justify-content: space-between;
 align-items: center;
-
 }
 section#menu>div#container-div>div.dproduct{
     width: calc(25% - 45px);
@@ -173,18 +197,60 @@ section#menu>div#container-div>div.dproduct{
     display: flex;
     flex-direction: column;
     text-align: center;
+       /*parte 1*/
+       position: relative;
+       display: inline-block;
 }
-section#menu>div#container-div>div.dproduct>img{
+
+section#menu>div#container-div>div.dproduct>div.containerimg{
     width: 100%;
     height: 250px;
-    background-color: #CB6CE6;
-
+    /*parte 2*/
+    display: block;
 }
-
+section#menu>div#container-div>div.dproduct>div.containerimg>img{
+    width: 100%;
+    height: 250px;
+}
+section#menu>div#container-div>div.dproduct>div.containerimg>div.hover{
+/*CONTENEDOR SOBREPUESTO*/
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(223, 222, 222, 0.3); /* Color negro con 50% de opacidad */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+section#menu>div#container-div>div.dproduct>div.containerimg>div.hover:hover{
+    cursor: pointer;
+        opacity: 1;
+}
 section#menu>div#container-div>div.dproduct>h5{
     color: #CB6CE6;
     margin-top: 15px;
     font-size: 1.2rem;
+}
+section#menu>div#container-div>div.dproduct>h5>a{
+text-decoration: none;
+color: #CB6CE6;
+transition: color 0.5s ease-in-out;
+}
+section#menu>div#container-div>div.dproduct>h5>a:hover{
+cursor: pointer;
+animation: colorChange 1s ease-in-out forwards; /* Aplica la animación al hacer hover */
+}
+@keyframes colorChange {
+    0% {
+        color: #CB6CE6; /* Color inicial */
+    }
+    50% {
+        color: #f3a4cb; /* Color intermedio */
+    }
+    100% {
+        color: #CB6CE6; /* Vuelve al color inicial */
+    }
 }
 section#menu>div#container-div>div.dproduct>p{
     color: #000000;
@@ -193,7 +259,7 @@ section#menu>div#container-div>div.dproduct>p{
 }
 section#menu>div#container-div2{
     width: calc(100% - 95px);
-    height: 365px;
+    height: 375px;
     display: flex;
     justify-content:space-between;
 align-items: center;
@@ -207,11 +273,19 @@ section#menu>div#container-div2>div.dcatalogo{
 }
 section#menu>div#container-div2>div.dcatalogo>img{
     width: 100%;
-    height: 270px;
+    height: 250px;
+    transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease;
+    filter: brightness(90%); /* Nivel de brillo inicial */
+}
+section#menu>div#container-div2>div.dcatalogo>img:hover{
+    transform: translateY(-10px); /* Desplazamiento hacia arriba */
+  filter: brightness(100%); /* Aumenta el brillo */
+  opacity: 0.9; /* Ligero cambio en la opacidad */
+  cursor: pointer;
 }
 section#menu>div#container-div2>div.dcatalogo>div.purple{
 width: 100%;
-height: 80px;
+height: 110px;
 margin-top: 15px;
 background-color: #CB6CE6;
 display: flex;
@@ -222,6 +296,23 @@ justify-content: center;
 section#menu>div#container-div2>div.dcatalogo>div.purple>h5{
 font-size: 1.2rem;
 color: whitesmoke;
+}
+section#menu>div#container-div2>div.dcatalogo>div.purple>button{
+    margin-top: 10px;
+    color: #CB6CE6;
+    background-color: whitesmoke;
+    border: none;
+    width: 50%;
+    height:30px;
+    font-size: 1.2rem;
+    transition: 1ms ease-in all;
+}
+section#menu>div#container-div2>div.dcatalogo>div.purple>button:hover i{
+cursor:pointer;
+transform: scale(1.1); /* El icono crece y rota ligeramente */
+}
+section#menu>div#container-div2>div.dcatalogo>div.purple>button:hover{
+    cursor:pointer;
 }
 section#menu>div#re{
     width: calc(100% - 95px);
