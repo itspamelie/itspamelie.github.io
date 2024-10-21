@@ -3,6 +3,9 @@
     body{
         height: 1000px;
     }
+    header{
+        height: 80px;
+    }
     header>div#anuncio{
         display: none;
     }
@@ -13,27 +16,41 @@
    header>div#barra>ul>li.text{
 display: none;
    }  
+   header>div#barra>ul>li.logo{
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+   section#main{
+    height: 400px;
+   }
 section#main>div#mitad2{
 display: none;
 }
 section#main>div#mitad1{
 width: 100%;
 display: block;
-margin-left: 35px;
+margin-left: 30px;
+margin-right: 30px;
+margin-top: -35px;
 }
 section#menu{
     display: block;
-    width: 100%;
+width: calc(100% - 60px) ;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 section#menu>div#container-div{
     width: 100%;
     height: 500px;
-    margin-left: 35px;
+    margin-top: 45px;
+    justify-content: space-between;
 }
 section#menu>div#container-div>div.dproduct{
-    flex: 1 1 calc(50% - 20px);
+    flex: 1 1 calc(50% - 50px);
+    width: calc(50% - 50px);
 }
-section#menu>div.title{
-    margin-top: 50px;
+
+footer{
+    display: none;
 }
 }
