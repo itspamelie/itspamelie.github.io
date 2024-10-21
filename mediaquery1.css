@@ -1,31 +1,39 @@
 /* CELULAR*/
 @media (max-width: 500px){
     body{
-display: block;
+        height: 1000px;
     }
     header>div#anuncio{
         display: none;
     }
     header>div#barra{
-        display: block
+        display: block;
+        width: 50%;
     }
    header>div#barra>ul>li.text{
 display: none;
    }  
-   header>div#barra>ul>li.logo{
-    margin-left: 20px;
-    margin-right: 20px;
-   }
-   section#main>div#mitad2{
- display: none;
-   }
-   section#main>div#mitad1{
+section#main>div#mitad2{
+display: none;
+}
+section#main>div#mitad1{
+width: 100%;
 display: block;
+margin-left: 35px;
 }
 section#menu{
     display: block;
+    width: 100%;
 }
-#container-div>.dproduct{
-    flex: 1 1 calc(250px - 20px);
+section#menu>div#container-div{
+    width: 100%;
+    height: 500px;
+    margin-left: 35px;
+}
+section#menu>div#container-div>div.dproduct{
+    flex: 1 1 calc(50% - 20px);
+}
+section#menu>div.title{
+    margin-top: 50px;
 }
 }
