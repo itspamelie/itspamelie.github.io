@@ -27,6 +27,7 @@ header>div#anuncio{
 }
 header>div#anuncio>a{
 color: whitesmoke;
+text-decoration: none;
 }
 header>div#barra{
     width: 100%;
