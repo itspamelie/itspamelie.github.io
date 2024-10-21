@@ -1,5 +1,9 @@
 /* CELULAR*/
 @media (max-width: 500px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
     header>div#barra{
         display: flex;
         justify-content: space-between;
@@ -16,11 +20,11 @@ display: none;
     display: flex;
     align-items: center;
    }
-   section#main>div#mitad2>h3{
+   section#main>div#mitad2{
  display: none;
    }
    section#main>div#mitad1{
-width: 100%;
+width: 50%;
 }
 #container-div>.dproduct{
     flex: 1 1 calc(100% - 20px);
