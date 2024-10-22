@@ -16,6 +16,7 @@ margin-left: -15px;
         display: none;
     }
     header>div#barra{
+        margin-left: -15px;
         display: block;
         width: 50%;
     }
@@ -23,39 +24,44 @@ margin-left: -15px;
 display: none;
    }  
    section#main{
-    width: calc(100% - 50px);
+    width: calc(100% - 10px);
+    margin-left: 5px;
     height: 700px;
    }
    section#main>div#pt1{
     display: none;
    }
    section#main>div#pt2{
-    background-color: #cb6ce6;
     width: 100%;
     text-align: center;
-    margin-left: -35px;
+    margin-left:-10px;
    }
    section#main>div#pt2>h2{
-margin-left: 10px;   
+margin-left: 20px;   
 }
 section#main>div#pt2>h4{
-    margin-left: 10px;   
-    margin-top: 20px;
+    margin-left: 20px;   
+    margin-top: 30px;
+    text-align: center;
     }
     section#main>div#pt2>h5{
-        margin-left: 10px;  
-        margin-top: 20px; 
+        margin-left: 20px;  
+        margin-top: 30px; 
+        text-align: center;
         }
         section#main>div#pt2>input{
-            margin-left: 10px;   
-            margin-top: 20px;
+            margin-left: 20px;   
+            margin-top: 30px;
+            text-align: center;
+            width: 96%;
             }
             section#main>div#pt2>div#recordar{
-                margin-left: 10px;   
-                margin-top: 20px;
+                margin-left: 20px;   
+                margin-top: 30px;
+                text-align: center;
                 }
                 section#main>div#pt2>div#boton{
-                    margin-top: 20px;
+                    text-align: center;
                     }
 }
 /*ESTILOS PARA LA TABLET*/
