@@ -53,13 +53,13 @@ header>div#barra>ul>li#foto>img{
 }
 header>div#barra>ul>li.text{
     list-style: none;
-    margin-left: calc(5.25%);
+    margin-left: calc(5.2%);
     margin-top: 28px;
     width: auto;
 }
 header>div#barra>ul>li.logo{
     list-style: none;
-    margin-left: calc(5.25%);
+    margin-left: calc(5.2%);
     margin-top: 28px;
     width: auto;
 }
