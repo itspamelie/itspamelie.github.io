@@ -1,0 +1,120 @@
+/* CELULAR*/
+@media (max-width: 500px){
+    body{
+        height: 700px;
+    }
+    header{
+        height: 80px;
+        width: 100%;
+    }
+    header>div#barra>ul>li#foto>img{
+width: 240px;
+height: 58;
+margin-left: -15px;
+    }
+    header>div#anuncio{
+        display: none;
+    }
+    header>div#barra{
+        display: block;
+        width: 50%;
+    }
+   header>div#barra>ul>li.text{
+display: none;
+   }  
+   section#main{
+    width: calc(100% - 50px);
+    height: 700px;
+   }
+   section#main>div#pt1{
+    display: none;
+   }
+   section#main>div#pt2{
+    background-color: #cb6ce6;
+    width: 100%;
+    text-align: center;
+    margin-left: -35px;
+   }
+   section#main>div#pt2>h2{
+margin-left: 10px;   
+}
+section#main>div#pt2>h4{
+    margin-left: 10px;   
+    margin-top: 20px;
+    }
+    section#main>div#pt2>h5{
+        margin-left: 10px;  
+        margin-top: 20px; 
+        }
+        section#main>div#pt2>input{
+            margin-left: 10px;   
+            margin-top: 20px;
+            }
+            section#main>div#pt2>div#recordar{
+                margin-left: 10px;   
+                margin-top: 20px;
+                }
+                section#main>div#pt2>div#boton{
+                    margin-top: 20px;
+                    }
+}
+/*ESTILOS PARA LA TABLET*/
+@media (min-width: 700px) and (max-width: 1024px){
+    body{
+        height: 700px;
+    }
+    header{
+        height: 80px;
+        width: 100%;
+    }
+    header>div#barra>ul>li#foto>img{
+width: 240px;
+height: 58;
+margin-left: -15px;
+    }
+    header>div#anuncio{
+        display: none;
+    }
+    header>div#barra{
+        display: block;
+        width: 50%;
+    }
+   header>div#barra>ul>li.text{
+display: none;
+   }  
+   section#main{
+    width: calc(100% - 50px);
+    height: 700px;
+   }
+   section#main>div#pt1{
+    display: none;
+   }
+   section#main>div#pt2{
+    background-color: #cb6ce6;
+    width: 100%;
+    text-align: center;
+    margin-left: -35px;
+   }
+   section#main>div#pt2>h2{
+margin-left: 10px;   
+}
+section#main>div#pt2>h4{
+    margin-left: 10px;   
+    margin-top: 20px;
+    }
+    section#main>div#pt2>h5{
+        margin-left: 10px;  
+        margin-top: 20px; 
+        }
+        section#main>div#pt2>input{
+            margin-left: 10px;   
+            margin-top: 20px;
+            }
+            section#main>div#pt2>div#recordar{
+                margin-left: 10px;   
+                margin-top: 20px;
+                }
+                section#main>div#pt2>div#boton{
+                    margin-top: 20px;
+                    }
+}
