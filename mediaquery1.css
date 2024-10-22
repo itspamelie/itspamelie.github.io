@@ -10,7 +10,7 @@
     header>div#barra>ul>li#foto>img{
 width: 240px;
 height: 58;
-margin-left: -15px;
+margin-left: -26px;
     }
     header>div#anuncio{
         display: none;
@@ -67,29 +67,33 @@ section#menu>div#container-div>div.dproduct{
     flex: 1 1 calc(50% - 50px);
     margin-top: 10px;
 }
-section#menu>div#container-div>div.dproduct>img{
-    width: 180px;
-    height: 230px;
+section#menu>div#container-div>div.dproduct>div.containerimg{
+    width: 90%;
+    height: 150px;
+}
+section#menu>div#container-div>div.dproduct>div.containerimg>img{
+    width: 100%;
+    height: auto;
 }
 section#menu>div#titlecatalogo{
-    margin-top: 500px;
+    margin-top: 400px;
 }
 section#menu>div#container-div2{
     width: 100%;
     height: 450px;
     margin-top: 45px;
-    margin-left: 15px;
     justify-content: space-between;
 }
 section#menu>div#container-div2>div.dcatalogo{
     flex: 1 1 calc(50% - 50px);
 }
 section#menu>div#container-div2>div.dcatalogo>img{
-    width: 170px;
-    height: 220px;
+    width: 98%;
+    height: 190px;
 }
 section#menu>div#container-div2>div.dcatalogo>div.purple {
-    width: 85%;
+    width: 98%;
+
     height: 150px;
     }
 section#menu>div.title>button#vermas{
@@ -125,6 +129,7 @@ footer{
 width: 240px;
 height: 58;
 margin-top: 10px;
+margin-left: -25px;
     }
     header>div#anuncio{
         display: none;

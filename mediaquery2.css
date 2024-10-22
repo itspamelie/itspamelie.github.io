@@ -10,7 +10,7 @@
     header>div#barra>ul>li#foto>img{
 width: 200px;
 height: 50px;
-margin-left: -25px;
+margin-left: -22px;
     }
     header>div#anuncio{
         display: none;
@@ -26,7 +26,7 @@ display: none;
    section#main{
     width: calc(100% - 10px);
     margin-left: 5px;
-    height: 700px;
+    height: 500px;
    }
    section#main>div#pt1{
     display: none;
