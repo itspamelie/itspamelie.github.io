@@ -103,6 +103,7 @@ section#main>div#pt2>h4{
 section#main>div#pt2>h5{
     margin-top: 20px;
     font-weight: 500;
+    font-size: .9rem;
 }
 section#main>div#pt2>input{
     width: 100%;
