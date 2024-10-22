@@ -18,8 +18,8 @@ display: none;
 text-align: center;
    }  
    header>div#barra>ul>li.logo{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
    }
    section#main{
     height: 400px;
@@ -52,6 +52,7 @@ section#menu>div#container-div{
 }
 section#menu>div#container-div>div.dproduct{
     flex: 1 1 calc(50% - 50px);
+    margin-top: 10px;
 }
 section#menu>div#titlecatalogo{
     margin-top: 450px;
