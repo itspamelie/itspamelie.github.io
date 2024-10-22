@@ -5,11 +5,13 @@
     }
     header{
         height: 80px;
-        margin-left: -20px;
+        width: 100%;
     }
     header>div#barra>ul>li#foto>img{
 width: 240px;
 height: 58;
+margin-left: -15px;
+
     }
     header>div#anuncio{
         display: none;
