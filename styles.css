@@ -258,6 +258,7 @@ section#menu>div#container-div2{
     display: flex;
     justify-content:space-between;
 align-items: center;
+flex-wrap: wrap;
 }
 section#menu>div#container-div2>div.dcatalogo{
     width: calc(25% - 45px);
@@ -316,6 +317,7 @@ section#menu>div#re{
     justify-content: space-between;
 align-items: center;
 margin-top: 20px;
+flex-wrap: wrap;
 }
 section#menu>div#re>div.opinion{
     width: calc(25% - 45px);
