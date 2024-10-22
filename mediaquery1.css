@@ -5,7 +5,7 @@
     }
     header{
         height: 80px;
-        margin-left: -10px;
+        margin-left: -15px;
     }
     header>div#barra>ul>li#foto>img{
 width: 250px;
@@ -65,7 +65,7 @@ section#menu>div#container-div>div.dproduct>img{
     height: 250px;
 }
 section#menu>div#titlecatalogo{
-    margin-top: 450px;
+    margin-top: 460px;
 }
 section#menu>div#container-div2{
     width: 100%;
