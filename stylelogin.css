@@ -119,7 +119,7 @@ section#main>div#pt2>div#forgot>a{
     font-weight: 500;
     text-decoration: none;
     color: whitesmoke;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 section#main>div#pt2>div#recordar{
 width: 100%;
@@ -128,7 +128,10 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 }
-section#main>div#pt2>div#recordar>p{
+section#main>div#pt2>div#recordar>input{
+    cursor: pointer;
+}
+section#main>div#pt2>div#recordar>label{
     margin-left: 5px;
     font-size: .9rem;
 }
@@ -152,11 +155,12 @@ transition: 500ms ease-in all;
 section#main>div#pt2>div#boton>button:hover{
 background-color: black;
 color: whitesmoke;
+cursor: pointer;
  }
  section#main>div#pt2>div#boton>a{
     font-weight: 500;
     margin-top: 5px;
     text-decoration: none;
     color: whitesmoke;
-    font-size: .7rem;
+    font-size: .9rem;
  }
