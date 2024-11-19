@@ -46,6 +46,9 @@
                     <li class="nav-item">
                       <a href="./shipping.html" class="nav-link text-white"><i class="bi bi-truck"></i>&nbsp;&nbsp;Envíos </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="./venta.html" class="nav-link text-white"><i class="bi bi-bag-heart"></i>&nbsp;&nbsp;Ventas </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -111,13 +114,9 @@
                 <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">Telefono</th>
-                        <th scope="col">Nivel</th>
-                        <th scope="col">Foto</th>
-
+                        <th scope="col">ID DE VENTA</th>
+                        <th scope="col">Método de Pago</th>
+                        <th scope="col">Monto</th>
                         <th></th>
 
                       </tr>
@@ -125,46 +124,34 @@
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Pamela</td>
-                        <td>pam@gmail.com</td>
-                        <td>6361148085</td>
-                        <td>Cliente</td>
-                        <td><img src="../img/profile.jpeg" alt="" style="width: 30px;  height: 30px; border-radius: 50%;"></td>
+                        <td>Tarjeta BBVA crédito</td>
+                        <td>$1000</td>
 
                         <td>
-                            <button class="btn btn-outline-danger" type="submit" id="btnDelete"><i class="bi bi-trash2"></i></button>
-                            <button class="btn btn-outline-warning"><i class="bi bi-pencil"></i></button>
-                            <button class="btn btn-outline-dark"><i class="bi bi-arrow-right"></i></button>
+                          <button class="btn btn-outline-danger btnEliminar" data-campo="Campo 1"><i class="bi bi-trash2"></i></button>
+                          <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#editdata"><i class="bi bi-pencil"></i></button>
                         </td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Luisa</td>
-                        <td>luisi@hotmail.com</td>
-                        <td>@6361726373</td>
-                        <td>Cliente</td>
-                        <td><img src="../img/c3.webp" alt="" style="width: 30px;  height: 30px; border-radius: 50%;"></td>
-
+                        <td>Tarjeta BBVA Débito</td>
+                        <td>$99.99</td>
+                        
                         <td>
-                            <button class="btn btn-outline-danger" type="submit" id="btnDelete1"><i class="bi bi-trash2"></i></button>
-                            <button class="btn btn-outline-warning"><i class="bi bi-pencil"></i></button>
-                            <button class="btn btn-outline-dark"><i class="bi bi-arrow-right"></i></button>
+                          <button class="btn btn-outline-danger btnEliminar" data-campo="Campo 2"><i class="bi bi-trash2"></i></button>
+                          <button class="btn btn-outline-warning"  data-bs-toggle="modal" data-bs-target="#editdata"><i class="bi bi-pencil"></i></button>
                         </td>
                        
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>Anna</td>
-                        <td>anita0@gmail.com</td>
-                        <td>6362712823</td>
-                        <td>Cliente</td>
-                        <td><img src="../img/pic1.jpg" alt="" style="width: 30px;  height: 30px; border-radius: 50%;"></td>
-
-
+                       
+                        <td>Tarjeta Nu crédito</td>
+                        <td>$2000</td>
+                       
                         <td>
-                            <button class="btn btn-outline-danger"><i class="bi bi-trash2"></i></button>
-                            <button class="btn btn-outline-warning"><i class="bi bi-pencil"></i></button>
-                            <button class="btn btn-outline-dark"><i class="bi bi-arrow-right"></i></button>
+                          <button class="btn btn-outline-danger btnEliminar" data-campo="Campo 3"><i class="bi bi-trash2"></i></button>
+                          <button class="btn btn-outline-warning"  data-bs-toggle="modal" data-bs-target="#editdata"><i class="bi bi-pencil"></i></button>
                         </td>
                       </tr>
                     </tbody>
@@ -173,8 +160,182 @@
                <!--DATA-->
 
 
+ <!--charts-->
+ <div class="row mt-4">
+  <div class="col-4">
+      <div class="card" style="height: 300px;">
+<div class="card-header  bg-purple text-white">
+METODOS DE PAGO MAS USADOS 
+</div>
+<div class="card-body justify-content-center align-items-center">
+  <ul class="list-unstyled justify-content-between mt-1">
+    <li class="fs-4">BBVA</li>
+    <li class="fs-4">NU</li>
+    <li class="fs-4">PAYPAL</li>
+    <li class="fs-4">SANTANDER</li>
+    <li class="fs-4">BANAMEX</li>
+    <li class="fs-4">BANBAJIO</li>
+
+  </ul>
+</div>
+      </div>
+  </div>
+
+
+  <div class="col-4">
+    <div class="card" style="height: 300px;">
+<div class="card-header  bg-purple text-white">
+Tarjetas con MSI</div>
+<div class="card-body">
+  <ul class="list-unstyled justify-content-between mt-1">
+    <li class="fs-4">MERCADO PAGO</li>
+    <li class="fs-4">NU</li>
+    <li class="fs-4">PAYPAL</li>
+    <li class="fs-4">SANTANDER</li>
+    <li class="fs-4">BANAMEX</li>
+    <li class="fs-4">BANBAJIO</li>
+
+  </ul>
+</div>
+    </div>
+</div>
+
+<div class="d-flex flex-column col-4 justify-content-between">
+  <div class="card align-items-center justify-content-center" style="height: 140px;">
+      <div class="card-body w-100 d-flex flex-column align-items-center justify-content-center">
+          <label class="">
+              CAPITAL ACTUAL
+            </label>
+            <h5 class="h2 text-center pt-2 text-purple fw-semibold">$1,000,000</h5>
+      </div>
+  </div>
+  <div class="card align-items-center justify-content-center" style="height: 140px;">
+    <div class="card-body w-100 d-flex flex-column align-items-center justify-content-center">
+        <label class="">
+           META DEL MES DE NOVIEMBRE
+          </label>
+          <h5 class="h2 text-center pt-2 text-purple fw-semibold">$500,000</h5>
+    </div>
+</div>
+</div>
+
+
+</div>   
+        <!--charts-->
+
+
+
+
+
+<!--MODAL editar PAGOS-->
+<div class="modal fade modal-lg" id="editdata" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Pago</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <form action="" class="needs-validation modal-form" novalidate id="editdata">
+              <div class="modal-body " >
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="">ID DE VENTA</label>
+                      <input required type="number" class="form-control" placeholder="ID de la venta">
+                      <div class="valid-feedback">
+                         Correcto
+                        </div>
+                        <div class="invalid-feedback">
+                       Método no válido
+                        </div>
+                  </div>
+                      <div class="col-6">
+                          <label for="">Método de pago</label>
+                          <input required type="text" class="form-control" placeholder="Método de pago">
+                          <div class="valid-feedback">
+                             Correcto
+                            </div>
+                            <div class="invalid-feedback">
+                           Método no válido
+                            </div>
+                      </div>
+                      <div class="col-6">
+                          <label for="">Monto</label>
+                          <input required type="number" class="form-control" placeholder="Monto de la compra">
+                          <div class="valid-feedback">
+                             Correcto
+                            </div>
+                            <div class="invalid-feedback">
+                           Monto no válido
+                            </div>
+                      </div>
+                     
+                  </div>
+                  <div class="alert alert-danger mt-4 d-none" id="divAlerta" role="alert">
+                  Favor de llenar los campos 
+                  </div>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-custom" id="guardarusu">Guardar</button>
+              </div>
+  </form>
+    </div>
+   </div>
+</div>
+<!-- TERMINA MODAL editar PAGOS-->
+
+
+<!--MODAL PAGO-->
+<div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Pago</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <form action="" class="needs-validation modal-form" novalidate id="formpago">
+              <div class="modal-body " >
+                  <div class="row">
+                      <div class="col-6">
+                          <label for="">Método de pago</label>
+                          <input required type="text" class="form-control" placeholder="Método de pago">
+                          <div class="valid-feedback">
+                             Correcto
+                            </div>
+                            <div class="invalid-feedback">
+                           Método no válido
+                            </div>
+                      </div>
+                      <div class="col-6">
+                          <label for="">Monto</label>
+                          <input required type="number" class="form-control" placeholder="Monto de la compra">
+                          <div class="valid-feedback">
+                             Correcto
+                            </div>
+                            <div class="invalid-feedback">
+                           Monto no válido
+                            </div>
+                      </div>
+                     </div>
+                  <div class="alert alert-danger mt-4 d-none" id="divAlerta" role="alert">
+                  Favor de llenar los campos 
+                  </div>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-custom" id="guardarusu">Guardar</button>
+              </div>
+  </form>
+    </div>
+   </div>
+</div>
+<!-- TERMINA MODAL PAGO-->
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="./users.js"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>

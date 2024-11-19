@@ -13,6 +13,7 @@ create table stock(id_prod int not null, FOREIGN KEY (id_prod) REFERENCES produc
 create table usuario (id_usuario int not null /*auto_increment*/,primary key (id_usuario), nombre char(25), correo varchar(40), password varchar(25),telefono varchar(10),profilepic varchar(30), nivel varchar(30));
 create table domicilio (id_usuario int not null,FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario), pais char(50), estado char(50), ciudad char(50), calle varchar(30),numero varchar(5), colonia varchar(50), cp varchar(5),referencia varchar (50));
 create table infopago (id_usuario int not null,FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario), tarjeta_digital varchar(16),cvv varchar(3),fecha_vencimiento date);
+
 create table opinion (id_usuario int not null,FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario), calificacion numeric(3,1), opinion varchar (100), id_prod int, FOREIGN KEY (id_prod) REFERENCES productos(id_prod));
 create table listadeseos (id_usuario int not null,FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario), id_prod int, FOREIGN KEY (id_prod) REFERENCES productos(id_prod));
 
